@@ -7,13 +7,13 @@ const mockData = {
   },
 
   stats: {
-    totalStudyTime: 127, // hours
-    chaptersCompleted: 45,
-    lessonsCompleted: 234,
-    conceptsLearned: 567,
-    currentStreak: 12,
+    totalStudyTime: 27, // hours
+    chaptersCompleted: 4,
+    lessonsCompleted: 24,
+    conceptsLearned: 57,
+    currentStreak: 2,
     sessionsToday: 3,
-    focusTimeToday: 75, // minutes
+    focusTimeToday: 45, // minutes
   },
 
   weeklyProgress: [
@@ -27,10 +27,10 @@ const mockData = {
   ],
 
   subjectDistribution: [
-    { subject: "Mathematics", hours: 45, color: "#3b82f6" },
-    { subject: "Physics", hours: 38, color: "#10b981" },
-    { subject: "Chemistry", hours: 32, color: "#f59e0b" },
-    { subject: "Biology", hours: 12, color: "#ef4444" },
+    { subject: "DSA", hours: 45, color: "#3b82f6" },
+    { subject: "DLCA", hours: 38, color: "#10b981" },
+    { subject: "DBMS", hours: 32, color: "#f59e0b" },
+    { subject: "DSGT", hours: 12, color: "#ef4444" },
   ],
 
   dailyStudyTime: [
@@ -51,10 +51,10 @@ const mockData = {
   ],
 
   chapterProgress: [
-    { subject: "Mathematics", completed: 15, total: 20 },
-    { subject: "Physics", completed: 12, total: 18 },
-    { subject: "Chemistry", completed: 10, total: 16 },
-    { subject: "Biology", completed: 8, total: 14 },
+    { subject: "DSA", completed: 15, total: 20 },
+    { subject: "DLCA", completed: 12, total: 18 },
+    { subject: "DBMS", completed: 10, total: 16 },
+    { subject: "DSGT", completed: 8, total: 14 },
   ],
 
   conceptMastery: [
@@ -76,28 +76,28 @@ const mockData = {
 
   subjectProgress: [
     {
-      name: "Mathematics",
+      name: "DSA",
       percentage: 75,
       chapters: { completed: 15, total: 20 },
       lessons: { completed: 89, total: 120 },
       concepts: { completed: 234, total: 300 },
     },
     {
-      name: "Physics",
+      name: "DLCOA",
       percentage: 67,
       chapters: { completed: 12, total: 18 },
       lessons: { completed: 67, total: 95 },
       concepts: { completed: 156, total: 220 },
     },
     {
-      name: "Chemistry",
+      name: "DBMS",
       percentage: 63,
       chapters: { completed: 10, total: 16 },
       lessons: { completed: 52, total: 85 },
       concepts: { completed: 123, total: 180 },
     },
     {
-      name: "Biology",
+      name: "DSGT",
       percentage: 57,
       chapters: { completed: 8, total: 14 },
       lessons: { completed: 43, total: 70 },
@@ -232,6 +232,7 @@ const mockData = {
         "The various types of arrays are One dimensional array and Multi-dimensional array.",
       duration: "9.16",
       instructor: "Naina Mam",
+      url: "https://youtu.be/lAEmhJA-tVw?si=tJUY4vVJgkQoooFG",
     },
     {
       id: 4,
@@ -241,6 +242,7 @@ const mockData = {
         "In this video you will find the formula for address calculation in single dimensional array with examples.",
       duration: "7.13",
       instructor: "Naina Mam",
+      URL: "https://youtu.be/JTfPmCiLhz0?si=KeA5LU88EsmuDffw",
     },
     {
       id: 5,
@@ -250,6 +252,57 @@ const mockData = {
         "Addressing in 2D Arrays | Row Major Order.collection of elements arranged in rows and columns",
       duration: "8.20",
       instructor: "Naina Mam",
+      url: "https://youtu.be/BNA6Sb1wM8E?si=59qa8N2KS1cbap8c",
+    },
+        {
+      id: 6,
+      title: "2D Arrays",
+      subject: "Data Structures and Algorithms",
+      description:
+        "3D Arrays | Addressing in 3D Arrays | Row Major Order",
+      duration: "8.20",
+      instructor: "Naina Mam",
+      url: "https://youtu.be/mzfhcfa0Ra0?si=X2DL-yZyPM1NzCrI",
+    },
+        {
+      id:7 ,
+      title: "2D Arrays",
+      subject: "Data Structures and Algorithms",
+      description:
+" Addressing in Lower Triangular Matrix",
+      duration: "8.20",
+      instructor: "Naina Mam",
+      url: "https://youtu.be/X-vk__Y1Tgk?si=BuBIJN7eXo8j0A_e",
+    },
+        {
+      id:8 ,
+      title: "2D Arrays",
+      subject: "Data Structures and Algorithms",
+      description:
+        "Find 2nd Largest2️⃣ Number in Array",
+      duration: "8.20",
+      instructor: "Naina Mam",
+      url: "https://youtu.be/eIm9ODShmCI?si=Vuv_p_Rshg5Q3ABN",
+    },
+        {
+      id:9 ,
+      title: "2D Arrays",
+      subject: "Data Structures and Algorithms",
+      description:
+        "Two 2️⃣ Pointer👆 Technique",
+      duration: "8.20",
+      instructor: "Naina Mam",
+      url: "https://youtu.be/B2L4mAglJZA?si=rxMkdTkzazZRSC3b",
+    },
+        {
+      id:10 ,
+      title: "2D Arrays",
+      subject: "Data Structures and Algorithms",
+      description:
+        " Maximum Sum Subarray Problem",
+      duration: "8.20",
+      instructor: "Naina Mam",
+      url: "https://youtu.be/9N3hDuS28EI?si=365-Rds6MSUuN7io",
     },
   ],
 };
