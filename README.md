@@ -1,103 +1,153 @@
-# 📚 StudBud (StudyHub) — The Ultimate DSA Study Buddy
+<p align="center">
+  <img src="public/favicon.png" alt="StudBud Logo" width="120" height="120" style="border-radius: 24px; box-shadow: 0 8px 30px rgba(139, 92, 246, 0.4);" />
+</p>
 
-[![Vercel Deployment](https://img.shields.io/badge/Deploy-Vercel-success?logo=vercel&logoColor=white&style=for-the-badge)](https://studbud-gold.vercel.app)
-[![React Version](https://img.shields.io/badge/React-18.3-blue?logo=react&logoColor=white&style=for-the-badge)](https://react.dev)
-[![Vite Engine](https://img.shields.io/badge/Vite-5.4-8B5CF6?logo=vite&logoColor=white&style=for-the-badge)](https://vitejs.dev)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.5-3178C6?logo=typescript&logoColor=white&style=for-the-badge)](https://www.typescriptlang.org)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38BDF8?logo=tailwindcss&logoColor=white&style=for-the-badge)](https://tailwindcss.com)
+<h1 align="center">📚 StudBud (StudyHub)</h1>
 
-**StudBud** (also known as **StudyHub**) is a high-fidelity, premium Single Page Application (SPA) designed to help students master **Data Structures and Algorithms (DSA)**. It serves as a unified digital workstation featuring dashboard diagnostics, curated learning feeds, custom document readers, interactive mockups, and stateful Pomodoro focus sessions.
+<p align="center">
+  <strong>The Ultimate Glassmorphic DSA Study Workstation</strong>
+</p>
+
+<p align="center">
+  <a href="https://studbud-gold.vercel.app">
+    <img src="https://img.shields.io/badge/Deploy-Vercel-success?logo=vercel&logoColor=white&style=for-the-badge&color=000000" alt="Vercel Deployment" />
+  </a>
+  <a href="https://react.dev">
+    <img src="https://img.shields.io/badge/React-18.3-blue?logo=react&logoColor=white&style=for-the-badge&color=20232a" alt="React" />
+  </a>
+  <a href="https://vitejs.dev">
+    <img src="https://img.shields.io/badge/Vite-5.4-8B5CF6?logo=vite&logoColor=white&style=for-the-badge&color=646CFF" alt="Vite" />
+  </a>
+  <a href="https://www.typescriptlang.org">
+    <img src="https://img.shields.io/badge/TypeScript-5.5-3178C6?logo=typescript&logoColor=white&style=for-the-badge&color=3178C6" alt="TypeScript" />
+  </a>
+  <a href="https://tailwindcss.com">
+    <img src="https://img.shields.io/badge/Tailwind_CSS-3.4-38BDF8?logo=tailwindcss&logoColor=white&style=for-the-badge&color=06B6D4" alt="Tailwind CSS" />
+  </a>
+</p>
+
+<p align="center">
+  StudBud is a state-of-the-art, high-fidelity digital study workspace custom-engineered for mastering <strong>Data Structures & Algorithms (DSA)</strong>. Features a dark-themed glassmorphic design, dashboard diagnostics, interactive Pomodoro focus tracking, curated video lectures, immersive notes readers, and global keyboard command hotkeys.
+</p>
+
+<p align="center">
+  ⚡ <strong><a href="https://studbud-gold.vercel.app">Explore the Live App →</a></strong>
+</p>
 
 ---
 
-## 🔗 Live Site
-Explore the live website immediately:  
-🌐 **Production URL**: [https://studbud-gold.vercel.app](https://studbud-gold.vercel.app)
+## 📸 Immersive Interface Showcase
+
+Here is a visual breakdown of the workstation using real screenshots captured directly from production:
+
+### 1. 🔑 Preloaded Frictionless Portal
+*A premium, futuristic glass-panel authentication interface pre-populated with active demonstration credentials to facilitate instant, passwordless evaluation.*
+<p align="center">
+  <img src="public/login_screen.png" alt="StudBud Login Screen" width="90%" style="border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);" />
+</p>
 
 ---
 
-## 📸 Mockup Previews
+### 2. 📖 Immersive Revision Deck & Notes Reader
+*An exquisite revision center featuring categorized DSA summaries. Clicking any card opens a beautifully formatted markdown canvas with variable annotations and self-healing responsive layouts.*
+<p align="center">
+  <img src="public/notes_screen.png" alt="StudBud Study Notes Section" width="90%" style="border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);" />
+</p>
 
-### 📈 Dynamic Analytics Dashboard
-*A glassmorphic dashboard showcasing live tracking metrics, study timelines, streaks, recent activity feeds, and syllabus checkpoints.*
-![StudBud Dashboard](docs/images/dashboard_mockup.png)
+---
 
-### 🎥 Lecture Hub & Pop-up Video Player
-*Curated video learning tracks from **Gate Smashers** featuring full overlays, autoplay embeds, and responsive thumbnail fallbacks.*
-![StudBud Videos](docs/images/videos_mockup.png)
+### 3. 🎬 Verified Video Lecture Deck & Cinematic Overlays
+*A learning hub populated with premium lecture feeds from <strong>Gate Smashers</strong>. Hover animations highlight difficulty metrics, and clicking any lecture opens a seamless dark cinematic overlay with responsive video embeds.*
+<p align="center">
+  <img src="public/videos_screen.png" alt="StudBud Video Lectures Feed" width="90%" style="border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);" />
+</p>
 
 ---
 
 ## ⚡ Core Features
 
-### 1. 📊 Diagnostics Dashboard
-* **Real-time Analytics**: Displays live study hours, streak calendars, completed quizzes, and read pages synced via a robust local-storage persistence engine.
-* **Syllabus Deadlines**: Organized priority tracker to manage upcoming assignments, problem sets, and complexity analysis deadlines.
-* **Weekly Goals**: Visual progress bar tracking weekly study goal thresholds.
+### 📊 1. Diagnostics Dashboard
+- **Real-Time Analytics Tracker**: Live visual trackers showing total study hours, active learning streaks, quiz scores, and syllabus pages read—all persisted seamlessly via `localStorage`.
+- **Syllabus Roadmap Matrix**: Priority deadlines checkboard for syllabus items, allowing students to check off complex subjects as they go.
+- **Goal Completion Diagnostics**: Animated dynamic gauge tracking weekly learning targets.
 
-### 2. 🎬 Verified Video Lecture Feeds
-* **Gate Smashers Core Integration**: Loaded with 6 verified, highly-viewed DSA video lectures (ranging from single linked list structures, stack/queue concepts, BST insertion algorithms, to Dijkstra's Shortest Path theory).
-* **Overlay Video Player Modal**: Clicking any card opens a dark, responsive cinematic overlay that embeds the YouTube player natively.
-* **Self-Healing Fallbacks**: Uses resilient image links with a automated local fallback cache. If the YouTube image servers are blocked by academic or university firewalls, it immediately loads a premium high-res coding design as a fallback.
+### 🎬 2. Cinematic Video Lecture Engine
+- **Curated Gate Smashers Curriculum**: 6 high-value, active DSA lectures covering LinkedList, Stacks/Queues, Binary Search Trees, and Dijkstra's Shortest Path algorithms.
+- **Cinematic Overlay Player**: Responsive overlay embeds YouTube's dynamic iframe player with custom background blurring.
+- **Self-Healing Thumbnail System**: Employs an automated failover backup. If YouTube's servers are blocked under restrictive educational network firewalls, gorgeous backup mockups load instantly to preserve design integrity.
 
-### 3. 📖 Custom Document Revision Reader
-* **Rich Lecture Summaries**: Full revision sheets detailing operations, comparisons, memory addresses, and pseudo-code structures.
-* **Built-in Markdown Reader**: Clicking "Read Now" opens an immersive scrollable document canvas complete with clean grid matrices, styled variables, and progress syncing.
+### 📖 3. Interactive Lecture Summary Canvas
+- **Deep-Dive Reading Mode**: Seamlessly sliding document overlays render fully formatted DSA worksheets, computational logic explanations, and pseudocode snippets.
+- **Context Preservation**: Smooth custom aesthetic scrollbars replace browser defaults, maintaining structural balance with scroll-locked document body layers.
 
-### 4. ⏱️ Stateful Pomodoro Focus Timer
-* Stateful timer system tracking active work vs. break periods, recording completed sessions directly to your diagnostics history.
+### ⏱️ 4. Focus Pomodoro Sync
+- Integrated, user-configurable Pomodoro clock syncing study cycles and short/long break segments directly to dashboard analytics.
 
-### 5. ⌨️ Keyboard Shortcut Navigation (Power Hotkeys)
-Navigate the entire platform instantly using single key taps (bypassed naturally when writing inside input or select boxes):
-* `D` — Jump to **Dashboard**
-* `N` — Jump to **Notes**
-* `V` — Jump to **Videos**
-* `Q` — Jump to **Quiz**
-* `P` — Jump to **PYQ**
-* `T` — Jump to **Timer**
-* `Escape` — Instantly close any open active modal (Video player or Notes reader)
+---
 
-### 🔑 Instant Demo Sandbox (Pre-filled Credentials)
-To provide frictionless evaluations, both Login and Signup forms are preloaded with test credentials:
-* **Email**: `student69@somaiya.edu`
+## ⌨️ Global Power-User Command Hotkeys
+
+To facilitate high-velocity traversal, the application is wired with instant keyboard navigation (natively ignored when writing inside text fields or form boxes):
+
+| Hotkey | Navigation Destination / Action |
+| :---: | :--- |
+| <kbd>D</kbd> | Jump to **Dashboard** |
+| <kbd>N</kbd> | Jump to **Study Notes** |
+| <kbd>V</kbd> | Jump to **Video Lectures** |
+| <kbd>Q</kbd> | Jump to **Practice Quizzes** |
+| <kbd>P</kbd> | Jump to **Previous Year Papers (PYQ)** |
+| <kbd>T</kbd> | Jump to **Pomodoro Timer** |
+| <kbd>Esc</kbd> | Close active Video Overlays / Slide-out Notes Document |
+
+---
+
+## 🔑 Demo Sandbox Credentials
+To bypass mandatory signup during evaluations, the system contains fully pre-filled, static accounts:
+* **Email / Username**: `student69@somaiya.edu`
 * **Password**: `password123`
-* *Simply click "Sign In" or "Create Account" to land directly on the dashboard.*
+* _Action_: Simply tap the **Sign In** button on the portal to instantly land inside the main diagnostics workspace.
 
 ---
 
-## 🛠️ Technology Stack
-* **Framework**: React 18 (Hooks, Stateful Context APIs)
-* **Build tool**: Vite 5 (Bundler, hot-module reload)
-* **Language**: TypeScript 5 (Strict types, clean modular interfaces)
-* **Styling**: Tailwind CSS 3 (Dynamic layouts, glassmorphic filters, sleek dark overlays)
-* **Icons**: Lucide React
-* **Hosting**: Vercel CI/CD Production Pipeline
+## 🛠️ Technological Architecture
+
+* **Frontend Engine**: React 18.3 (Strict state preservation, functional hooks, persistent context)
+* **Build System & Dev Server**: Vite 5.4 (Instant HMR, tree-shaking compilation)
+* **Typing Interface**: TypeScript 5.5 (Strict typing, strong contracts)
+* **Design & Styling**: Tailwind CSS 3.4 (Sophisticated glassmorphism, HSL custom color spaces, dark mode layouts)
+* **Iconography**: Lucide React
+* **Deployment Pipeline**: Production-optimized and aliased globally on Vercel
 
 ---
 
-## 🚀 How to Run Locally
+## 🚀 Spin Up Locally
 
 ### Prerequisites
-Make sure you have [Node.js](https://nodejs.org) installed on your system.
+Ensure [Node.js](https://nodejs.org) (v18 or higher) is installed on your local machine.
 
-### Steps
-1. **Clone and open the directory**:
+### Instructions
+1. **Clone the Repository**:
    ```bash
+   git clone <your-repository-url>
    cd STUDBUD
    ```
-2. **Install dependencies**:
+
+2. **Install Workspace Dependencies**:
    ```bash
    npm install
    ```
-3. **Start the local Vite server**:
+
+3. **Boot the Hot-Module-Reloading Development Server**:
    ```bash
    npm run dev
    ```
-4. **Access the local sandbox**:
+
+4. **Navigate to the Local Workstation**:
    Open [http://localhost:5173](http://localhost:5173) in your web browser.
 
 ---
 
-## 📝 License & Credits
-* **Video Content**: Curated from the exceptional computer science playlists on the [Gate Smashers YouTube Channel](https://www.youtube.com/@GateSmashers) led by Varun Singla.
-* **Design & Engineering**: Restructured, fixed, and polished to production quality.
+## 📝 License, Credits & Contributions
+
+* **DSA Curriculum Lectures**: Sincere thanks to the [Gate Smashers YouTube Channel](https://www.youtube.com/@GateSmashers) led by Varun Singla for creating outstanding learning resources.
+* **Design & System Architecture**: Built and polished by StudBud contributors to achieve premium production quality.
