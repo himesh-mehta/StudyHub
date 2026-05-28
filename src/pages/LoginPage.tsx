@@ -4,8 +4,8 @@ import { useAuth } from '../contexts/AuthContext';
 import { Brain, Eye, EyeOff, BookOpen, Trophy, Users } from 'lucide-react';
 
 export default function LoginPage() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('student69@somaiya.edu');
+  const [password, setPassword] = useState('password123');
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
   const { login, isLoading } = useAuth();

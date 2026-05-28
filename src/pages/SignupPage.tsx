@@ -4,10 +4,10 @@ import { useAuth } from '../contexts/AuthContext';
 import { Brain, Eye, EyeOff, User, Mail, Lock } from 'lucide-react';
 
 export default function SignupPage() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
+  const [name, setName] = useState('Student69');
+  const [email, setEmail] = useState('student69@somaiya.edu');
+  const [password, setPassword] = useState('password123');
+  const [confirmPassword, setConfirmPassword] = useState('password123');
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [error, setError] = useState('');

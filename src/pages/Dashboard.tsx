@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Layout from '../components/Layout';
 import { useProgress } from '../contexts/ProgressContext';
 import { 
@@ -14,33 +15,34 @@ import {
 } from 'lucide-react';
 
 export default function Dashboard() {
+  const navigate = useNavigate();
   const { progress } = useProgress();
 
   const quickActions = [
     { 
       title: 'Continue Reading', 
-      subtitle: 'Physics - Quantum Mechanics', 
+      subtitle: 'Data Structures - Introduction', 
       icon: BookOpen, 
       color: 'bg-blue-500',
       href: '/notes'
     },
     { 
       title: 'Watch Lecture', 
-      subtitle: 'Mathematics - Calculus', 
+      subtitle: 'Algorithms - Graphs Theory', 
       icon: Play, 
       color: 'bg-red-500',
       href: '/videos'
     },
     { 
       title: 'Take Quiz', 
-      subtitle: 'Chemistry - Organic', 
+      subtitle: 'DSA Challenge - Stacks & Queues', 
       icon: Brain, 
       color: 'bg-green-500',
       href: '/quiz'
     },
     { 
       title: 'Study Timer', 
-      subtitle: 'Focus Session', 
+      subtitle: 'DSA focus session', 
       icon: Clock, 
       color: 'bg-purple-500',
       href: '/timer'
@@ -79,16 +81,16 @@ export default function Dashboard() {
   ];
 
   const recentActivity = [
-    { type: 'quiz', subject: 'Physics', topic: 'Thermodynamics', score: 85, time: '2 hours ago' },
-    { type: 'video', subject: 'Mathematics', topic: 'Linear Algebra', duration: '45 min', time: '4 hours ago' },
-    { type: 'notes', subject: 'Chemistry', topic: 'Chemical Bonding', pages: 12, time: '1 day ago' },
-    { type: 'quiz', subject: 'Biology', topic: 'Cell Structure', score: 92, time: '2 days ago' },
+    { type: 'quiz', subject: 'Algorithms', topic: 'Binary Search Trees', score: 85, time: '2 hours ago' },
+    { type: 'video', subject: 'Data Structures', topic: 'Linked List Traversal', duration: '15 min', time: '4 hours ago' },
+    { type: 'notes', subject: 'Data Structures', topic: 'Complexity Classes & Big O', pages: 12, time: '1 day ago' },
+    { type: 'quiz', subject: 'Algorithms', topic: 'Graph DFS/BFS', score: 92, time: '2 days ago' },
   ];
 
   const upcomingDeadlines = [
-    { subject: 'Physics', assignment: 'Lab Report', due: 'Tomorrow', priority: 'high' },
-    { subject: 'Mathematics', assignment: 'Problem Set 5', due: '3 days', priority: 'medium' },
-    { subject: 'Chemistry', assignment: 'Research Paper', due: '1 week', priority: 'low' },
+    { subject: 'Data Structures', assignment: 'Linked List Implementation', due: 'Tomorrow', priority: 'high' },
+    { subject: 'Algorithms', assignment: 'BST Traversal Problem Set', due: '3 days', priority: 'medium' },
+    { subject: 'Algorithms', assignment: 'Sorting Time Complexities paper', due: '1 week', priority: 'low' },
   ];
 
   return (
@@ -97,7 +99,7 @@ export default function Dashboard() {
         {/* Header */}
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">Welcome back!</h1>
-          <p className="text-gray-600">Ready to continue your learning journey?</p>
+          <p className="text-gray-600">Ready to continue your DSA learning journey?</p>
         </div>
 
         {/* Quick Actions */}
@@ -105,15 +107,16 @@ export default function Dashboard() {
           {quickActions.map((action, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-200 cursor-pointer group"
+              onClick={() => navigate(action.href)}
+              className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl hover:border-blue-200 transition-all duration-200 cursor-pointer group"
             >
               <div className="flex items-center justify-between mb-4">
                 <div className={`w-12 h-12 ${action.color} rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform`}>
                   <action.icon className="w-6 h-6 text-white" />
                 </div>
-                <ArrowRight className="w-5 h-5 text-gray-400 group-hover:text-gray-600 transition-colors" />
+                <ArrowRight className="w-5 h-5 text-gray-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all" />
               </div>
-              <h3 className="font-semibold text-gray-900 mb-1">{action.title}</h3>
+              <h3 className="font-semibold text-gray-900 mb-1 group-hover:text-blue-600 transition-colors">{action.title}</h3>
               <p className="text-sm text-gray-600">{action.subtitle}</p>
             </div>
           ))}
