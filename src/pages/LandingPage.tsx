@@ -187,10 +187,10 @@ export default function LandingPage() {
                 <div className="flex items-center space-x-3 bg-slate-100/80 p-1.5 pl-3.5 rounded-full border border-slate-200">
                   <div className="flex items-center space-x-2">
                     <div className="w-7 h-7 rounded-full bg-gradient-to-tr from-blue-600 to-indigo-600 text-white flex items-center justify-center text-xs font-bold shadow-xs">
-                      {user.name.slice(0, 2).toUpperCase()}
+                      {user?.name ? user.name.slice(0, 2).toUpperCase() : 'ST'}
                     </div>
                     <span className="text-xs font-semibold text-slate-800 max-w-[120px] truncate">
-                      {user.name}
+                      {user?.name || 'Student'}
                     </span>
                   </div>
 
