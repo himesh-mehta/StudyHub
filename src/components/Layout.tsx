@@ -90,9 +90,12 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <div className="fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-lg flex flex-col justify-between border-r border-gray-100">
         <div className="flex flex-col h-full overflow-y-auto no-scrollbar">
           {/* Logo */}
-          <div className="flex items-center px-6 py-4 border-b border-gray-200">
-            <Brain className="w-8 h-8 text-blue-600 mr-3 animate-pulse" />
-            <h1 className="text-xl font-bold text-gray-900">StudyHub</h1>
+          <div 
+            onClick={() => navigate('/')} 
+            className="flex items-center px-6 py-4 border-b border-gray-200 cursor-pointer group"
+          >
+            <Brain className="w-8 h-8 text-blue-600 mr-3 animate-pulse group-hover:scale-105 transition-transform" />
+            <h1 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">StudBud</h1>
           </div>
 
           {/* Navigation */}

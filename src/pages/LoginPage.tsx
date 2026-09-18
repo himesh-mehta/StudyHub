@@ -28,10 +28,10 @@ export default function LoginPage() {
       {/* Left Side - Branding */}
       <div className="hidden lg:flex lg:w-1/2 flex-col justify-center px-12 text-white">
         <div className="max-w-md">
-          <div className="flex items-center mb-8">
-            <Brain className="w-12 h-12 text-blue-300 mr-4" />
-            <h1 className="text-4xl font-bold">StudyHub</h1>
-          </div>
+          <Link to="/" className="flex items-center mb-8 group cursor-pointer">
+            <Brain className="w-12 h-12 text-blue-300 mr-4 group-hover:scale-105 transition-transform" />
+            <h1 className="text-4xl font-bold hover:text-blue-200 transition-colors">StudBud</h1>
+          </Link>
           
           <h2 className="text-3xl font-bold mb-6">
             Your Ultimate Learning Companion
