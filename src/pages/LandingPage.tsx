@@ -125,7 +125,7 @@ export default function LandingPage() {
       </div>
 
       {/* HEADER / STICKY NAV */}
-      <header className="sticky top-0 z-50 backdrop-blur-md bg-white/85 border-b border-slate-200/70 shadow-xs transition-all">
+      <header className="sticky top-0 z-50 backdrop-blur-lg bg-white/90 border-b border-slate-200/80 shadow-sm transition-all">
         <div className={wideContainerClass}>
           <div className="flex items-center justify-between h-16 sm:h-20">
             
@@ -369,28 +369,6 @@ export default function LandingPage() {
                   </button>
                 </div>
 
-                {/* Value Indicators */}
-                <div className="pt-6 border-t border-slate-200/60 w-full grid grid-cols-3 gap-3 sm:gap-6">
-                  <div className="flex items-center space-x-2 text-slate-700 font-medium text-xs sm:text-sm">
-                    <div className="w-8 h-8 rounded-lg bg-blue-100/70 text-blue-600 flex items-center justify-center shrink-0">
-                      <BookOpen className="w-4 h-4" />
-                    </div>
-                    <span>Learn</span>
-                  </div>
-
-                  <div className="flex items-center space-x-2 text-slate-700 font-medium text-xs sm:text-sm">
-                    <div className="w-8 h-8 rounded-lg bg-indigo-100/70 text-indigo-600 flex items-center justify-center shrink-0">
-                      <Brain className="w-4 h-4" />
-                    </div>
-                    <span>Practice</span>
-                  </div>
-
-                  <div className="flex items-center space-x-2 text-slate-700 font-medium text-xs sm:text-sm">
-                    <div className="w-8 h-8 rounded-lg bg-purple-100/70 text-purple-600 flex items-center justify-center shrink-0">
-                      <Clock className="w-4 h-4" />
-                    </div>
-                    <span>Track</span>
-                  </div>
                 </div>
 
               </div>
