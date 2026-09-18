@@ -366,9 +366,6 @@ export default function LandingPage() {
                     className="w-full sm:w-auto px-7 py-4 rounded-2xl bg-white border border-slate-200 text-slate-700 font-medium text-base hover:bg-slate-50 hover:border-slate-300 transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 flex items-center justify-center shadow-xs"
                   >
                     Explore StudBud
-                  </button>
-                </div>
-
                 </div>
 
               </div>
